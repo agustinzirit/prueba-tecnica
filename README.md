@@ -37,3 +37,7 @@ composer install
     ```
     php artisan test
     ```
+Nota: Para acceder al sistema,
+
+Usuario: admin@example.com
+Clave: 12345

@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get("/", function() {
+    return redirect('/home');
+});
+
 Route::post('/order/checkout', [OrderController::class, 'checkout'])->name('order.checkout');
 Route::post('/order/store', [OrderController::class, 'store'])->name('order.store');
 Route::get('/order/create', [OrderController::class, 'create'])->name('order.create');
